@@ -17,45 +17,25 @@ class AddColumnsToSubmission < ActiveRecord::Migration[5.0]
     add_column :submissions, :organization_contact_job_title, :string
     add_column :submissions, :organization_phone, :integer
     add_column :submissions, :organization_email, :string
-    add_column :submissions, :transportation_logistics, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :technology, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :retail_stores_trade, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :professional_service, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :pharma_medical_devices, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :non_profit, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :medical_marketing, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :manufacturing, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :hospitality, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :healthcare_service, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :government_law_politics, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :food_beverage_cpg, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :financial_services, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :energy, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :education, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :arts_entertainment_recreation, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :architecture_real_estate_construction, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :agriculture_natural_resources, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :wes_alum, :string
-    add_column :submissions, :boolean, :string
-    add_column :submissions, :cardinal, :string
-    add_column :submissions, :boolean, :string
+    add_column :submissions, :transportation_logistics, :boolean
+    add_column :submissions, :technology, :boolean
+    add_column :submissions, :retail_stores_trade, :boolean
+    add_column :submissions, :professional_service, :boolean
+    add_column :submissions, :pharma_medical_devices, :boolean
+    add_column :submissions, :non_profit, :boolean
+    add_column :submissions, :medical_marketing, :boolean
+    add_column :submissions, :manufacturing, :boolean
+    add_column :submissions, :hospitality, :boolean
+    add_column :submissions, :healthcare_service, :boolean
+    add_column :submissions, :government_law_politics, :boolean
+    add_column :submissions, :food_beverage_cpg, :boolean
+    add_column :submissions, :financial_services, :boolean
+    add_column :submissions, :energy, :boolean
+    add_column :submissions, :education, :boolean
+    add_column :submissions, :arts_entertainment_recreation, :boolean
+    add_column :submissions, :architecture_real_estate_construction, :boolean
+    add_column :submissions, :agriculture_natural_resources, :boolean
+    add_column :submissions, :wes_alum, :boolean
+    add_column :submissions, :cardinal, :boolean
   end
 end
