@@ -1,0 +1,41 @@
+class AddColumnsToSubmission < ActiveRecord::Migration[5.0]
+  def change
+    add_column :submissions, :rating, :integer
+    add_column :submissions, :season, :string
+    add_column :submissions, :year, :integer
+    add_column :submissions, :compensation, :string
+    add_column :submissions, :outside_compensation, :string
+    add_column :submissions, :hours, :integer
+    add_column :submissions, :organization_name, :string
+    add_column :submissions, :mailing_address, :string
+    add_column :submissions, :city, :string
+    add_column :submissions, :state, :string
+    add_column :submissions, :zipcode, :int
+    add_column :submissions, :country, :string
+    add_column :submissions, :organization_URL, :string
+    add_column :submissions, :organization_contact_name, :string
+    add_column :submissions, :organization_contact_job_title, :string
+    add_column :submissions, :organization_phone, :integer
+    add_column :submissions, :organization_email, :string
+    add_column :submissions, :transportation_logistics, :boolean
+    add_column :submissions, :technology, :boolean
+    add_column :submissions, :retail_stores_trade, :boolean
+    add_column :submissions, :professional_service, :boolean
+    add_column :submissions, :pharma_medical_devices, :boolean
+    add_column :submissions, :non_profit, :boolean
+    add_column :submissions, :medical_marketing, :boolean
+    add_column :submissions, :manufacturing, :boolean
+    add_column :submissions, :hospitality, :boolean
+    add_column :submissions, :healthcare_service, :boolean
+    add_column :submissions, :government_law_politics, :boolean
+    add_column :submissions, :food_beverage_cpg, :boolean
+    add_column :submissions, :financial_services, :boolean
+    add_column :submissions, :energy, :boolean
+    add_column :submissions, :education, :boolean
+    add_column :submissions, :arts_entertainment_recreation, :boolean
+    add_column :submissions, :architecture_real_estate_construction, :boolean
+    add_column :submissions, :agriculture_natural_resources, :boolean
+    add_column :submissions, :wes_alum, :boolean
+    add_column :submissions, :cardinal, :boolean
+  end
+end
