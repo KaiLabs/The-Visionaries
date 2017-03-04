@@ -1,2 +1,247 @@
-<h1>Submissions#new</h1>
-<p>Find me in app/views/submissions/new.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/custom.css?body=1" media="screen" rel="stylesheet">
+    <link href="/assets/bootstrap.css?body=1" media="screen" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <style media="screen">
+
+    .descr {
+      text-align: left;
+    }
+
+    @media (min-width: 768px) {
+      .container-fluid {
+        max-width: 730px;
+      }
+    }
+    .container-narrow > hr {
+      margin: 30px 0;
+    }
+
+    .row{
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  </style>
+
+  <body>
+    <div class="container-fluid">
+      <h1>WesSID: Submission Form</h1>
+      <form class="form-horizontal" role="form">
+
+
+
+        <div class="form-group">
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Rate your experience:</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="one">*</option>
+                <option value="two">**</option>
+                <option value="three">***</option>
+                <option value="four">****</option>
+                <option value="five">*****</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Position title:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="posTit">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Season:</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="one">*</option>
+                <option value="two">**</option>
+                <option value="three">***</option>
+                <option value="four">****</option>
+                <option value="five">*****</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Year:</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="one">*</option>
+                <option value="two">**</option>
+                <option value="three">***</option>
+                <option value="four">****</option>
+                <option value="five">*****</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Compensation:</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="one">*</option>
+                <option value="two">**</option>
+                <option value="three">***</option>
+                <option value="four">****</option>
+                <option value="five">*****</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="comp" class="col-md-4 col-form-label">If stipend/ outside funding, please describe:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="comp">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="hour" class="col-md-4 col-form-label">Hours:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="hour">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="org" class="col-md-4 col-form-label">Organization name:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="org">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="mail" class="col-md-4 col-form-label">Mailing address:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="mail">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="city" class="col-md-4 col-form-label">City:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="city">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">State:</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="one">*</option>
+                <option value="two">**</option>
+                <option value="three">***</option>
+                <option value="four">****</option>
+                <option value="five">*****</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="zip" class="col-md-4 col-form-label">Zip code:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="zip">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="orgurl" class="col-md-4 col-form-label">Organization URL:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="orgurl">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="conn" class="col-md-4 col-form-label">Contact name:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="conn">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="cjt" class="col-md-4 col-form-label">Contact job title:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="cjt">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="conp" class="col-md-4 col-form-label">Contact Phone and/ or Email:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" id="conp">
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Would you like to provide your contact information?</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Country:</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="one">*</option>
+                <option value="two">**</option>
+                <option value="three">***</option>
+                <option value="four">****</option>
+                <option value="five">*****</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Was this a Cardinal internship?</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="exp" class="col-md-4 col-form-label">Is the contact a Wes alum?</label>
+            <div class="col-md-8">
+              <select class="form-control">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="exp" class="col-form-label">Is the contact a Wes alum?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
