@@ -38,18 +38,24 @@
       margin-bottom: 10px;
       margin-top: 10px;
     }
+
+    .form-check-label {
+      font-size: 12px;
+    }
+
   </style>
 
   <body>
     <div class="container-fluid">
       <h1>WesSID: Submission Form</h1>
-      <form class="form-horizontal" role="form">
+      <%= form_tag submissions_path, :method => :post do %>
+      <!-- <form class="form-horizontal" role="form"> -->
 
 
 
         <div class="form-group">
 
-          <div class="row">
+          <!-- <div class="row">
             <label for="exp" class="col-md-4 col-form-label">Rate your experience:</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -60,16 +66,27 @@
                 <option value="five">*****</option>
               </select>
             </div>
-          </div>
-
+          </div> -->
           <div class="row">
-            <label for="exp" class="col-md-4 col-form-label">Position title:</label>
+            <%= label :submission, :rating, 'Rate your experience:', class: 'col-md-4 col-form-label' %>
             <div class="col-md-8">
-              <input class="form-control" type="text" id="posTit">
+              <%= select_tag 'submission[rating]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
             </div>
           </div>
 
           <div class="row">
+            <%= label :submission, :position_title, 'Position title:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_area_tag 'submission[position_title]', "", class: 'form-control' %>
+            </div>
+          </div>
+            <!-- <label for="exp" class="col-md-4 col-form-label">Position title:</label> -->
+            <!-- <div class="col-md-8"> -->
+              <!-- <input class="form-control" type="text" id="posTit"> -->
+            <!-- </div> -->
+
+
+          <!-- <div class="row">
             <label for="exp" class="col-md-4 col-form-label">Season:</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -234,10 +251,38 @@
             </div>
           </div>
 
-          <label for="exp" class="col-form-label">Is the contact a Wes alum?</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          <label for="f-i" class="col-form-label">Field/Industry:</label>
+          <div class="row">
+            <div class="col-md-4 form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Agriculture & Natural Resources
+                </label>
+            </div>
+            <div class="col-md-4 form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Architecture, Real Estate & Construction
+              </label>
+            </div>
+            <div class="fcol-md-4 orm-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> Arts, Entertainment & Recreation
+              </label>
+            </div>
+          </div>
+
+          <label for="orgdes" class="col-form-label">Organization Mission/ Description:</label></br>
+          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+
+
+
+
+
+
+        </div> -->
+        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        <%= submit_tag 'Submit', class: 'btn btn-primary' %>
+        <%end %>
+
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
