@@ -56,9 +56,9 @@
         <div class="form-group">
 
           <!-- <div class="row">
-            <label for="exp" class="col-md-4 col-form-label">Rate your experience:</label>
+            变 <label for="exp" class="col-md-4 col-form-label">Rate your experience:</label>
             <div class="col-md-8">
-              <select class="form-control">
+              变 <select class="form-control">
                 <option value="one">*</option>
                 <option value="two">**</option>
                 <option value="three">***</option>
@@ -77,7 +77,7 @@
           <div class="row">
             <%= label :submission, :position_title, 'Position title:', class: 'col-md-4 col-form-label' %>
             <div class="col-md-8">
-              <%= text_area_tag 'submission[position_title]', "", class: 'form-control' %>
+              <%= text_field_tag 'submission[position_title]', "", class: 'form-control' %>
             </div>
           </div>
             <!-- <label for="exp" class="col-md-4 col-form-label">Position title:</label> -->
@@ -97,9 +97,16 @@
                 <option value="five">*****</option>
               </select>
             </div>
-          </div>
+          </div> -->
 
           <div class="row">
+            <%= label :submission, :season, 'Season:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= select_tag 'submission[season]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="exp" class="col-md-4 col-form-label">Year:</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -110,9 +117,16 @@
                 <option value="five">*****</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :year, 'Year:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= select_tag 'submission[year]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="exp" class="col-md-4 col-form-label">Compensation:</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -123,44 +137,86 @@
                 <option value="five">*****</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :compensation, 'Compensation:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= select_tag 'submission[compensation]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="comp" class="col-md-4 col-form-label">If stipend/ outside funding, please describe:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="comp">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :outside_compensation, 'If stipend/ outside funding, please describe:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[outside_compensation]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="hour" class="col-md-4 col-form-label">Hours:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="hour">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :hours, 'Hours:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[hours]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="org" class="col-md-4 col-form-label">Organization name:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="org">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :organization_name, 'Organization name:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[organization_name]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="mail" class="col-md-4 col-form-label">Mailing address:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="mail">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :mailing_address, 'Mailing address:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[mailing_address]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="city" class="col-md-4 col-form-label">City:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="city">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :city, 'City:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[city]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="exp" class="col-md-4 col-form-label">State:</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -171,44 +227,93 @@
                 <option value="five">*****</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :state, 'State:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= select_tag 'submission[state]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="zip" class="col-md-4 col-form-label">Zip code:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="zip">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :zipcode, 'Zip code:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[zipcode]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="orgurl" class="col-md-4 col-form-label">Organization URL:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="orgurl">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :organization_URL, 'Organization URL:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[organization_URL]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="conn" class="col-md-4 col-form-label">Contact name:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="conn">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :organization_contact_name, 'Organization contact name:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[organization_contact_name]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="cjt" class="col-md-4 col-form-label">Contact job title:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="cjt">
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :organization_contact_job_title, 'Organization contact job name:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[organization_contact_job_title]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="conp" class="col-md-4 col-form-label">Contact Phone and/ or Email:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" id="conp">
             </div>
+          </div>-->
+
+          <div class="row">
+            <%= label :submission, :organization_phone, 'Organization phone:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[organization_phone]', "", class: 'form-control' %>
+            </div>
           </div>
 
           <div class="row">
+            <%= label :submission, :organization_email, 'Organization email:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= text_field_tag 'submission[organization_eamil]', "", class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="exp" class="col-md-4 col-form-label">Would you like to provide your contact information?</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -216,9 +321,9 @@
                 <option value="no">No</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
-          <div class="row">
+          <!--<div class="row">
             <label for="exp" class="col-md-4 col-form-label">Country:</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -229,9 +334,16 @@
                 <option value="five">*****</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :country, 'Country:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= select_tag 'submission[country]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="exp" class="col-md-4 col-form-label">Was this a Cardinal internship?</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -239,9 +351,16 @@
                 <option value="no">No</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
           <div class="row">
+            <%= label :submission, :cardinal, 'Was this a Cardinal internship?:', class: 'col-md-4 col-form-label' %>
+            <div class="col-md-8">
+              <%= select_tag 'submission[cardinal]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
+            </div>
+          </div>
+
+          <!--<div class="row">
             <label for="exp" class="col-md-4 col-form-label">Is the contact a Wes alum?</label>
             <div class="col-md-8">
               <select class="form-control">
@@ -249,9 +368,17 @@
                 <option value="no">No</option>
               </select>
             </div>
-          </div>
+          </div>-->
 
-          <label for="f-i" class="col-form-label">Field/Industry:</label>
+
+            <div class="row">
+              <%= label :submission, :wes_alum, 'Is the contact a Wes alum?:', class: 'col-md-4 col-form-label' %>
+              <div class="col-md-8">
+                <%= select_tag 'submission[wes_alum]', "<option>*</option><option>**</option><option>***</option><option>****</option><option>*****</option>".html_safe, class: 'form-control' %>
+              </div>
+            </div>
+
+          <!--<label for="f-i" class="col-form-label">Field/Industry:</label>
           <div class="row">
             <div class="col-md-4 form-check form-check-inline">
                 <label class="form-check-label">
